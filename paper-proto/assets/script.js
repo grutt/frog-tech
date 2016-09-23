@@ -104,6 +104,10 @@ $(function(){
           $(this).toggleClass("normal");
 
         });
+$('.prioirty').click(function(){
+    $('.tLsyn').removeClass("hidden");
+    $('.priority').addClass("hidden");
+});
 
 
 });
