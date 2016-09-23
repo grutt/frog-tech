@@ -38,7 +38,7 @@ $(function(){
   $("#ex3").slider({min  : 0, max  : 10, value: 7, tooltip_position:'bottom'});
 
   //live populating
-  for (i = 0; i < max; i++) {
+  for (i = 0; i < 9; i++) {
     $(transcriptEntry("1:0"+i+" pm", "assets/images/roy.jpeg", entries[i].q, entries[i].a))
       .appendTo($("#liveTimePrepop"));
   }
