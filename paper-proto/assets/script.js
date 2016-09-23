@@ -41,16 +41,18 @@ $(function(){
       .appendTo($("#liveTimePrepop"));
   }
 
+  var stop = false;
+
   $(document).keypress(function(e) {
     if(e.which == 32) {
         $("#ready").hide();
         $("#liveTimePrepop").removeClass("hidden");
         $("#liveTime").addClass("hidden");
         $("html, body").scrollTop($(document).height());
-
+        stop = true;
     }
 
-    if(e.which == 13) {
+    if(e.which == 65 && !stop) {
         $("#ready").hide();
 
         if(current<max){
