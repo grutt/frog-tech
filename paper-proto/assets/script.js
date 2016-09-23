@@ -58,7 +58,7 @@ $(function(){
                 even = 1;
             }else{
                 even = 0;
-            $(last).hide();
+            $(#liveTimeline tr:last).hide();
 
             $(transcriptEntry("1:00 pm", "assets/images/gabriel_ruttner.jpg", entries[current].q, entries[current].a))
                 .appendTo($("#liveTimeline"));
