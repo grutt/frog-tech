@@ -54,7 +54,7 @@ $(function(){
         if(current<max){
             if(even == 0){
                 last = transcriptEntry("1:00 pm", "assets/images/gabriel_ruttner.jpg", "", "<h1>...</h1>");
-                $(last).appendTo($("#liveTimeline"));
+                last = $(last).appendTo($("#liveTimeline"));
                 even = 1;
             }else{
                 even = 0;
