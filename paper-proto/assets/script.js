@@ -101,7 +101,7 @@ $(function(){
 
     $('.comF').submit(function(){
         event.preventDefault();
-        var va = $(this).closest("div").children(".inText").val();
+        var va = $(this).children(".inText").val();
         $(this).closest("div").closest("td").children(".comments").html("Me: "+va);
         $(this).closest("div").hide();
     });
