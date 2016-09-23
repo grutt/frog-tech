@@ -6,6 +6,10 @@ body{
 	background: #BABABA;
 }
 
+.hiddent{
+    display:none;
+}
+
 .avatar{
   width:60px;
 }
