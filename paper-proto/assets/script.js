@@ -117,5 +117,8 @@ $('.priorityView').click(function(){
     $('.priority').removeClass("hidden");
 });
 
+$('.fa-bolt').click(function(){
+    $(this).css({"color":"yellow"})
+});
 
 });
