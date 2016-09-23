@@ -42,6 +42,8 @@ $(function(){
     if(e.which == 32) {
         $("#liveTimePrepop").removeClass("hidden");
         $("#liveTime").addClass("hidden");
+        $("html, body").scrollTop($(document).height());
+
     }
 
     if(e.which == 13) {
@@ -52,6 +54,11 @@ $(function(){
         }
       $("html, body").scrollTop($(document).height());
     }
+
+  });
+
+  $('.onlyInsights').click(function(){
+       var p = $("li:last").not(".insight").toggleSlide();
 
   });
 
