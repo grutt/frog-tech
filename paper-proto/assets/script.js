@@ -105,8 +105,8 @@ $(function(){
 
         });
 $('.priorityView').click(function(){
-    $('.tLsyn').removeClass("hidden");
-    $('.priority').addClass("hidden");
+    $('.tLsyn').addClass("hidden");
+    $('.priority').removeClass("hidden");
 });
 
 
