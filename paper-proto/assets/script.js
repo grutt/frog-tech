@@ -15,6 +15,7 @@ function transcriptEntry(time, avatar, quest, text){
                   <td class="speach">\
                     <div class="question">'+quest+'</div>\
                     <div class="bubble normal">'+text+'</div>\
+                    <div class="comments"></div>\
                     <div class ="buttons">\
                       <i class="fa fa-play-circle" aria-hidden="true"></i>\
                       <i class="fa fa-bolt" aria-hidden="true"></i>\
@@ -85,9 +86,9 @@ $(function(){
     );
 
 
-    $('.speach').click(function(){//over
-          $(this).children(".bubble").toggleClass("insight");
-          $(this).children(".bubble").toggleClass("normal");
+    $('.bubble').click(function(){//over
+          $(this).toggleClass("insight");
+          $(this).toggleClass("normal");
 
         });
 
