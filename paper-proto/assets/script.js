@@ -94,7 +94,7 @@ $(function(){
     $('.com').click(function(){//over
         var va = $(this).closest("div").children(".inText").val();
         $(this).closest("div").closest("td").children(".comments").html("Me: "+va);
-        $(this).closest("div").slideUp();
+        $(this).closest("div").hide();
     });
 
 
