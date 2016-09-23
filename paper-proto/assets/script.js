@@ -1,6 +1,6 @@
 $entries = $.csv.toObjects("dummy.csv");
 
-
+alert(entries);
 
 function transcriptEntry(time, avatar, quest, text){
   return  '<tr>\
