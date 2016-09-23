@@ -93,6 +93,7 @@ $(function(){
 
     $('.com').click(function(){//over
         var va = $(this).closest("div").children(".inText").val();
+        alert(va)
         $(this).closest("div").children(".comments").html("Me: "+va);
     });
 
