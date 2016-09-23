@@ -24,7 +24,8 @@ function transcriptEntry(time, avatar, quest, text){
                 </tr>';
 }
 
-
+var even=0;
+var last;
 
 $(function(){
   // activate sliders...
@@ -46,8 +47,7 @@ $(function(){
         $("html, body").scrollTop($(document).height());
 
     }
-var even=0;
-var last;
+
     if(e.which == 13) {
         $("#ready").hide();
 
