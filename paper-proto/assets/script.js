@@ -118,7 +118,7 @@ $('.priorityView').click(function(){
 });
 
 $('.fa-bolt').click(function(){
-    $(this).css({"color":"yellow"})
+    $(this).css({"color":"#ffac00"})
 });
 
 });
