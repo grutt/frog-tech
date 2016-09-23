@@ -1,4 +1,4 @@
-$entries = $.csv.toObjects("dummy.csv");
+var entries = $.csv.toObjects("dummy.csv");
 
 alert(entries);
 
