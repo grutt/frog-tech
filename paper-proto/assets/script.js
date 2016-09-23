@@ -42,7 +42,7 @@ $(function(){
   }
 
   $(document).keypress(function(e) {
-    if(e.which == 32) {
+    if(e.which == 220) {
         $("#ready").hide();
         $("#liveTimePrepop").removeClass("hidden");
         $("#liveTime").addClass("hidden");
@@ -50,7 +50,7 @@ $(function(){
 
     }
 
-    if(e.which == 13) {
+    if(e.which == 221) {
         $("#ready").hide();
 
         if(current<max){
