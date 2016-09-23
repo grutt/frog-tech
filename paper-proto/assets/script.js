@@ -34,7 +34,7 @@ $(function(){
 
   //live populating
   for (i = 0; i < 4; i++) {
-    $(transcriptEntry("1:0"+i+" pm", "assets/images/gabriel_ruttner.jpg", entries[i]., "this is some text"))
+    $(transcriptEntry("1:0"+i+" pm", "assets/images/gabriel_ruttner.jpg", entries[i].q, entries[i].a))
       .appendTo($("#liveTimeline"));
   }
 
