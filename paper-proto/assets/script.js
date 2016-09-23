@@ -32,7 +32,7 @@ $(function(){
 
   //live populating
   $.each(entries,function(key,value){
-    $(transcriptEntry("1:0"+i+" pm", "assets/images/gabriel_ruttner.jpg", "question?", "this is some text"))
+    $(transcriptEntry("1:0"+1+" pm", "assets/images/gabriel_ruttner.jpg", "question?", "this is some text"))
       .appendTo($("#liveTimeline"));
   });
 
