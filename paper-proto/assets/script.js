@@ -1,4 +1,9 @@
-var entries = $.csv.toObjects("dummy.csv");
+$.get( "dummy.csv", function( data ) {
+  var entries = $.csv.toObjects(data);
+
+  alert( "Load was performed." );
+});
+
 
 alert(entries);
 
