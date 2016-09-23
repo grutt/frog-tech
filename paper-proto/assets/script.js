@@ -5,7 +5,7 @@ $.get( "assets/dummy.csv", function( data ) {
 });
 
 var current = 0;
-var max = entries.length;
+var max = 10;
 
 function transcriptEntry(time, avatar, quest, text){
   return  '<tr>\
@@ -44,6 +44,7 @@ $(function(){
         if(current<max){
             $(transcriptEntry("1:00 pm", "assets/images/gabriel_ruttner.jpg", entries[current].q, entries[current].a))
                 .appendTo($("#liveTimeline"));
+                current++;
         }
       $("html, body").scrollTop($(document).height());
     }
