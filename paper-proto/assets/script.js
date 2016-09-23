@@ -40,7 +40,8 @@ $(function(){
 
   $(document).keypress(function(e) {
     if(e.which == 32) {
-        $("#liveTimePrepop, #liveTime").toggleClass("hidden")
+        $("#liveTimePrepop").removeClass("hidden");
+        $("#liveTime").addClass("hidden");
     }
 
     if(e.which == 13) {
