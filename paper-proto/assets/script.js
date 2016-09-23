@@ -58,7 +58,7 @@ $(function(){
   });
 
   $('.onlyInsights').click(function(){
-       var p = $("li:last").not(".insight").toggleSlide();
+       var p = $("li:last").not(".insight").slideToggle();
 
   });
 
