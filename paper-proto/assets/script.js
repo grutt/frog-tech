@@ -49,17 +49,21 @@ $(function(){
 var even=0;
 var last;
     if(e.which == 13) {
+        $("#ready").hide();
+
         if(current<max){
             if(even == 0){
                 last = transcriptEntry("1:00 pm", "assets/images/gabriel_ruttner.jpg", "", "<h1>...</h1>");
                 $(last).appendTo($("#liveTimeline"));
-            }
-            $("#ready").hide();
-            $(last).hide()
+                even = 1;
+            }else{
+                even = 0;
+            $(last).hide();
 
             $(transcriptEntry("1:00 pm", "assets/images/gabriel_ruttner.jpg", entries[current].q, entries[current].a))
                 .appendTo($("#liveTimeline"));
                 current++;
+            }
         }
       $("html, body").scrollTop($(document).height());
     }
