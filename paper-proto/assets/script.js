@@ -1,3 +1,7 @@
+$entries = $.csv.toObjects("dummy.csv");
+
+
+
 function transcriptEntry(time, avatar, quest, text){
   return  '<tr>\
                   <td class="fit">'+time+'</td>\
