@@ -92,7 +92,7 @@ $(function(){
     });
 
     $('.com').click(function(){//over
-        var va = $(this).closet("div").children(".inText").val();
+        var va = $(this).closest("div").children(".inText").val();
         $(this).closest("div").children(".comments").html("Me: "+va);
     });
 
