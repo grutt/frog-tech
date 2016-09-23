@@ -5,8 +5,6 @@ $.get( "assets/dummy.csv", function( data ) {
 });
 
 
-alert(entries);
-
 function transcriptEntry(time, avatar, quest, text){
   return  '<tr>\
                   <td class="fit">'+time+'</td>\
