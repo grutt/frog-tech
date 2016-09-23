@@ -52,7 +52,7 @@ $(function(){
         stop = false;
     }
 
-    if(e.which == 16 && stop) {
+    if(e.which == 16) {
         $("#ready").hide();
 
         if(current<max){
