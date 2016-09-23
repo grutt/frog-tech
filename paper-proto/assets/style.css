@@ -14,6 +14,10 @@ body{
   width:70px;
 }
 
+.orang{
+    color:#ffac00;
+}
+
 .dotty{
   background: url('images/dots.png') repeat-y center;
 }
@@ -84,10 +88,10 @@ border-radius: 15px;
 }
 
 .insight{
-  border-color: yellow;
+  border-color: #ffac00;
 }
 .insight:before{
-  border-color: transparent yellow;
+  border-color: transparent #ffac00;
 }
 .question{
 
