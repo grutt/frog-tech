@@ -11,7 +11,7 @@ function transcriptEntry(time, avatar, quest, text){
   return  '<tr>\
                   <td class="fit">'+time+'</td>\
                   <td class="fit dotty"><span class="circle"></span></td>\
-                  <td class="fit" ><img src="assets/images/gabriel_ruttner.jpg" class="img-circle avatar"></td>\
+                  <td class="fit" ><img src="assets/images/roy.jpeg" class="img-circle avatar"></td>\
                   <td class="speach">\
                     <div class="question">'+quest+'</div>\
                     <div class="bubble normal">'+text+'</div>\
@@ -39,7 +39,7 @@ $(function(){
 
   //live populating
   for (i = 0; i < max; i++) {
-    $(transcriptEntry("1:0"+i+" pm", "assets/images/gabriel_ruttner.jpg", entries[i].q, entries[i].a))
+    $(transcriptEntry("1:0"+i+" pm", "assets/images/roy.jpeg", entries[i].q, entries[i].a))
       .appendTo($("#liveTimePrepop"));
   }
 
