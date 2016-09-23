@@ -42,8 +42,6 @@ $(function(){
   }
 
   $(document).keypress(function(e) {
-      alert(e.which);
-
     if(e.which == 92) {
         $("#ready").hide();
         $("#liveTimePrepop").removeClass("hidden");
