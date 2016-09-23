@@ -2,8 +2,6 @@ var entries;
 
 $.get( "assets/dummy.csv", function( data ) {
   entries = $.csv.toObjects(data);
-
-  alert( "Load was performed." );
 });
 
 
