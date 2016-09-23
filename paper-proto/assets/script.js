@@ -55,7 +55,7 @@ $(function(){
   });
 
 
-  $('#liveTimeline tr .speach').hover(
+  $('tr .speach').hover(
     function(){//over
       $(this).children(".buttons").addClass("over");
     },
@@ -65,12 +65,12 @@ $(function(){
     );
 
 
-    $('#liveTimeline tr .speach').click(function(){//over
+    $('tr .speach').click(function(){//over
       $(this).children(".question").slideDown(399);
 
     });
 
-    $('#liveTimeline tr .speach').dblclick(function(){//over
+    $('tr .speach').dblclick(function(){//over
           $(this).children(".bubble").toggleClass("insight");
         });
 
