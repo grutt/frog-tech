@@ -44,7 +44,7 @@ $(function(){
   $(document).keypress(function(e) {
       alert(e.which);
 
-    if(e.which == 220) {
+    if(e.which == 92) {
         $("#ready").hide();
         $("#liveTimePrepop").removeClass("hidden");
         $("#liveTime").addClass("hidden");
@@ -52,7 +52,7 @@ $(function(){
 
     }
 
-    if(e.which == 221) {
+    if(e.which == 61) {
         $("#ready").hide();
 
         if(current<max){
