@@ -12,7 +12,7 @@ function transcriptEntry(time, avatar, quest, text){
                   <td class="fit">'+time+'</td>\
                   <td class="fit dotty"><span class="circle"></span></td>\
                   <td class="fit" ><img src="assets/images/gabriel_ruttner.jpg" class="img-circle avatar"></td>\
-                  <td class="speach">\
+                  <td class="speach normal">\
                     <div class="question">'+quest+'</div>\
                     <div class="bubble">'+text+'</div>\
                     <div class ="buttons">\
@@ -58,7 +58,7 @@ $(function(){
   });
 
   $('.onlyInsights').click(function(){
-       $("html, body").not(".insight").parent("tr").slideToggle();
+       $(".normal").closest("tr").slideToggle();
   });
 
 
@@ -73,12 +73,9 @@ $(function(){
 
 
     $('.speach').click(function(){//over
-      $(this).children(".question").slideDown(399);
-
-    });
-
-    $('.speach').dblclick(function(){//over
           $(this).children(".bubble").toggleClass("insight");
+          $(this).children(".bubble").toggleClass("normal");
+
         });
 
 
