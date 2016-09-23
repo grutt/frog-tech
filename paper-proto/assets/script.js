@@ -16,12 +16,17 @@ function transcriptEntry(time, avatar, quest, text){
 }
 
 
+entries = $.csv.toObjects("assets/dummy.csv");
 
 $(function(){
+
+
   // activate sliders...
   $("#ex1").slider({min  : 0, max  : 10, value: 10, tooltip_position:'bottom'});
   $("#ex2").slider({min  : 0, max  : 10, value: 3, tooltip_position:'bottom'});
   $("#ex3").slider({min  : 0, max  : 10, value: 7, tooltip_position:'bottom'});
+
+
 
   //live populating
   for (i = 0; i < 4; i++) {
@@ -38,6 +43,8 @@ $(function(){
     }
 
   });
+
+
 
 
   $('#liveTimeline tr .speach').hover(

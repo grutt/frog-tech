@@ -4,3 +4,6 @@ bootstrap
 JQuery
 http://www.ilikepixels.co.uk/drop/bubbler/
 http://fontawesome.io/icon/play-circle/
+https://github.com/evanplaice/jquery-csv/
+
+.amathus
