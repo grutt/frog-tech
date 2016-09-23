@@ -1,4 +1,4 @@
-$.get( "dummy.csv", function( data ) {
+$.get( "assets/dummy.csv", function( data ) {
   var entries = $.csv.toObjects(data);
 
   alert( "Load was performed." );
