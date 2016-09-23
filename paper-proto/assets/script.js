@@ -39,7 +39,7 @@ $(function(){
 
   //live populating
   for (i = 0; i < 9; i++) {
-    $(transcriptEntry("1:0"+i+" pm", "assets/images/roy.jpeg", entries[i].q, entries[i].a))
+    $(transcriptEntry("1:00 pm", "assets/images/roy.jpeg", entries[i].q, entries[i].a))
       .appendTo($("#liveTimePrepop"));
   }
 
