@@ -47,7 +47,7 @@ $(function(){
     if(e.which == 92) {
         $("#ready").hide();
         $("#liveTimePrepop").removeClass("hidden");
-        $("#liveTime").addClass("hidden");
+        $("#liveTimeline").addClass("hidden");
         $("html, body").scrollTop($(document).height());
 
     }
