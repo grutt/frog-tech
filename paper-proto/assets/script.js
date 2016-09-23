@@ -64,7 +64,7 @@ $(function(){
                 even = 0;
             $("#liveTimeline tr:last").remove();
 
-            $(transcriptEntry("1:00 pm", "assets/images/gabriel_ruttner.jpg", entries[current].q, entries[current].a))
+            $(transcriptEntry("1:00 pm", "assets/images/roy.jpeg", entries[current].q, entries[current].a))
                 .appendTo($("#liveTimeline"));
                 current++;
             }
