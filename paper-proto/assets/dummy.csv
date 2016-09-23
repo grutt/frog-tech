@@ -1,0 +1,14 @@
+Respondent ID,Question,Answer,Insight,Liked (0/1),Disliked (0/1),Tag (1-6),Comment,Fake Rank #
+1000001,What do you think of this product?,I actually find it kind of confusing.,Keep the UI clean.,0,1,4,N/A,9
+1000001,Why is it confusing?,"The landing page is very cluttered and, um, the amount of text just makes my head spin.",Keep the UI clean.,0,1,4,The respondent actually started sweating.,4
+3005678,How would you describe this product to your grandparents?,It's a time-saving app that helps me manage my finances in a simple fashion.,Time-saver.,1,0,2,Contradicts Respondent #1234513,8
+3005678,Why does this product help you specifically?,I used to get into debt troubles because I had too many sites to keep track of. This is all-in-one.,We're a one-stop shop.,1,0,1,N/A,3
+3005678,Why do you think Acme Bank would create this product?,I would guess that Acme Bank cares about giving a second chance to folks like me.,We can help right the ship.,1,0,1,Very interesting take on brand permission.,2
+1234513,How does this product make you feel?,It makes me feel confident about what the future holds. ,An empowering tool.,1,0,1,I saw literal tears forming in the corner of his eyes.,1
+1234513,What would you improve about this product?,I think it takes too long to navigate through the accounts section.,Time-intensive.,0,1,3,Contradicts Respondent #3005678,7
+5738332,How often would you use such a product and why?,I'd use this probably every few days to make sure I'm on track with my weekly expenses.,High potential with frequent usage.,1,0,6,N/A,5
+9848334,Why do you think Acme Bank would create this product?,"To be honest, I think all banks are out to get me. This is just a scam wrapped with a pretty bow.",Inherent trust barrier for some.,0,1,5,Contradicts Respondent #3005678,6
+9848334,What makes this product a scam?,There's probably a hacker on the other end of the screen laughing all the way to the bank.,Inherent trust barrier for some.,0,1,5,N/A,10
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
