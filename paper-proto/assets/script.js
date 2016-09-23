@@ -40,14 +40,23 @@ $(function(){
 
   $(document).keypress(function(e) {
     if(e.which == 32) {
+        $("#ready").hide();
         $("#liveTimePrepop").removeClass("hidden");
         $("#liveTime").addClass("hidden");
         $("html, body").scrollTop($(document).height());
 
     }
-
+var even=0;
+var last;
     if(e.which == 13) {
         if(current<max){
+            if(even == 0){
+                last = transcriptEntry("1:00 pm", "assets/images/gabriel_ruttner.jpg", "", "<h1>...</h1>");
+                $(last).appendTo($("#liveTimeline"));
+            }
+            $("#ready").hide();
+            $(last).hide()
+
             $(transcriptEntry("1:00 pm", "assets/images/gabriel_ruttner.jpg", entries[current].q, entries[current].a))
                 .appendTo($("#liveTimeline"));
                 current++;
