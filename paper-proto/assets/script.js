@@ -16,7 +16,7 @@ function transcriptEntry(time, avatar, quest, text){
                     <div class="question">'+quest+'</div>\
                     <div class="bubble normal">'+text+'</div>\
                     <div class="comments"></div>\
-                    <div class="comment-box hidden"><input type="text" /><input class="com" type="button" value=">" /> </div>\
+                    <div class="comment-box hidden"><input type="text" class="inText" /><input class="com" type="button" value=">" /> </div>\
                     <div class ="buttons">\
                       <i class="fa fa-play-circle" aria-hidden="true"></i>\
                       <i class="fa fa-bolt" aria-hidden="true"></i>\
