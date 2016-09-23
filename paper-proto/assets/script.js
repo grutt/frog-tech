@@ -16,7 +16,7 @@ function transcriptEntry(time, avatar, quest, text){
                     <div class="question">'+quest+'</div>\
                     <div class="bubble normal">'+text+'</div>\
                     <div class="comments"></div>\
-                    <div class="comment-box hidden"><input type="text" /><input type="button" value=">" /> </div>\
+                    <div class="comment-box hidden"><input type="text" /><input class="com" type="button" value=">" /> </div>\
                     <div class ="buttons">\
                       <i class="fa fa-play-circle" aria-hidden="true"></i>\
                       <i class="fa fa-bolt" aria-hidden="true"></i>\
@@ -87,9 +87,15 @@ $(function(){
     );
 
     $('.fa-commenting-o').click(function(){//over
-        $(this).parent().children("comment-box").toggleClass("hidden");
+        $(this).closet("td").children(".comment-box").toggleClass("hidden");
 
     });
+    $('.com').click(function(){//over
+        var va = $(this).closet("div").children(".inText").val();
+        $(this).closet("div").children(".comments").html("Me: "+va);
+    });
+
+
 
     $('.bubble').click(function(){//over
           $(this).toggleClass("insight");
