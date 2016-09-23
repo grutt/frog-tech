@@ -4,6 +4,8 @@ $.get( "assets/dummy.csv", function( data ) {
   entries = $.csv.toObjects(data);
 });
 
+var current = 0;
+var max = entries.length;
 
 function transcriptEntry(time, avatar, quest, text){
   return  '<tr>\
@@ -34,13 +36,15 @@ $(function(){
   for (i = 0; i < 4; i++) {
     $(transcriptEntry("1:0"+i+" pm", "assets/images/gabriel_ruttner.jpg", entries[i].q, entries[i].a))
       .appendTo($("#liveTimeline"));
+      current++;
   }
 
   $(document).keypress(function(e) {
     if(e.which == 13) {
-      $(transcriptEntry("1:0"+i+" pm", "assets/images/gabriel_ruttner.jpg", "question?", "this is some text"))
-        .appendTo($("#liveTimeline"));
-
+        if(current<max){
+            $(transcriptEntry("1:00 pm", "assets/images/gabriel_ruttner.jpg", entries[current].q, entries[current].a))
+                .appendTo($("#liveTimeline"));
+        }
       $("html, body").scrollTop($(document).height());
     }
 
