@@ -32,12 +32,12 @@ $(function(){
   $("#ex2").slider({min  : 0, max  : 10, value: 3, tooltip_position:'bottom'});
   $("#ex3").slider({min  : 0, max  : 10, value: 7, tooltip_position:'bottom'});
 
-  //live populating
-  for (i = 0; i < 0; i++) {
+ /* //live populating
+  for (i = 0; i < 1; i++) {
     $(transcriptEntry("1:0"+i+" pm", "assets/images/gabriel_ruttner.jpg", entries[i].q, entries[i].a))
       .appendTo($("#liveTimeline"));
       current++;
-  }
+  }*/
 
   $(document).keypress(function(e) {
     if(e.which == 13) {
