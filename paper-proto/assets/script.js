@@ -12,9 +12,9 @@ function transcriptEntry(time, avatar, quest, text){
                   <td class="fit">'+time+'</td>\
                   <td class="fit dotty"><span class="circle"></span></td>\
                   <td class="fit" ><img src="assets/images/gabriel_ruttner.jpg" class="img-circle avatar"></td>\
-                  <td class="speach normal">\
+                  <td class="speach">\
                     <div class="question">'+quest+'</div>\
-                    <div class="bubble">'+text+'</div>\
+                    <div class="bubble normal">'+text+'</div>\
                     <div class ="buttons">\
                       <i class="fa fa-play-circle" aria-hidden="true"></i>\
                       <i class="fa fa-bolt" aria-hidden="true"></i>\
