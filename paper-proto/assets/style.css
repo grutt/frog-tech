@@ -1,0 +1,90 @@
+body{
+    padding-top:3em;
+}
+
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+
+.avatar{
+  width:60px;
+}
+
+.dotty{
+  background: url('images/dots.png') repeat-y center;
+}
+.bubble
+{
+margin-left: 15px;
+
+position: relative;
+padding: 20px;
+background: #fff;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #7F7F7F solid 3px;
+}
+/*http://www.ilikepixels.co.uk/drop/bubbler/
+*/
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 5px 21px 5px 0;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+left: -21px;
+top: 31px;
+}
+
+.bubble:before
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 7px 23px 7px 0;
+border-color: transparent #7F7F7F;
+display: block;
+width: 0;
+z-index: 0;
+left: -26px;
+top: 29px;
+}
+
+.table td.fit,
+.table th.fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.circle{
+display:block;
+background:black;
+width:15px;
+height:15px;
+border-radius: 15px;
+}
+
+.buttons{
+  opacity:0;
+  font-size: 1.7em;
+  cursor:pointer;
+}
+
+.over{
+  opacity:100;
+}
+
+.insight{
+  border-color: yellow;
+}
+.insight:before{
+  border-color: transparent yellow;
+}
+.question{
+  display:none;
+}
