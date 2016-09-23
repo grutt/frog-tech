@@ -104,7 +104,7 @@ $(function(){
           $(this).toggleClass("normal");
 
         });
-$('.prioirty').click(function(){
+$('.priorityView').click(function(){
     $('.tLsyn').removeClass("hidden");
     $('.priority').addClass("hidden");
 });
