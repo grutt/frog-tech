@@ -93,8 +93,8 @@ $(function(){
 
     $('.com').click(function(){//over
         var va = $(this).closest("div").children(".inText").val();
-        alert(va)
-        $(this).closest("div").children(".comments").html("Me: "+va);
+        $(this).closest("div").closest("td").children(".comments").html("Me: "+va);
+        $(this).closest("div").slideUp();
     });
 
 
