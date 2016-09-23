@@ -55,7 +55,7 @@ $(function(){
   });
 
 
-  $('tr .speach').hover(
+  $('.speach').hover(
     function(){//over
       $(this).children(".buttons").addClass("over");
     },
@@ -65,12 +65,12 @@ $(function(){
     );
 
 
-    $('tr .speach').click(function(){//over
+    $('.speach').click(function(){//over
       $(this).children(".question").slideDown(399);
 
     });
 
-    $('tr .speach').dblclick(function(){//over
+    $('.speach').dblclick(function(){//over
           $(this).children(".bubble").toggleClass("insight");
         });
 
