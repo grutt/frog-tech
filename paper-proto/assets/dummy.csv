@@ -1,4 +1,4 @@
-Respondent ID,Question,Answer,Insight,Liked (0/1),Disliked (0/1),Tag (1-6),Comment,Fake Rank #
+id,q,a,insight,liked,disliked,tag,comment,rank
 1000001,What do you think of this product?,I actually find it kind of confusing.,Keep the UI clean.,0,1,4,N/A,9
 1000001,Why is it confusing?,"The landing page is very cluttered and, um, the amount of text just makes my head spin.",Keep the UI clean.,0,1,4,The respondent actually started sweating.,4
 3005678,How would you describe this product to your grandparents?,It's a time-saving app that helps me manage my finances in a simple fashion.,Time-saver.,1,0,2,Contradicts Respondent #1234513,8
@@ -9,6 +9,3 @@ Respondent ID,Question,Answer,Insight,Liked (0/1),Disliked (0/1),Tag (1-6),Comme
 5738332,How often would you use such a product and why?,I'd use this probably every few days to make sure I'm on track with my weekly expenses.,High potential with frequent usage.,1,0,6,N/A,5
 9848334,Why do you think Acme Bank would create this product?,"To be honest, I think all banks are out to get me. This is just a scam wrapped with a pretty bow.",Inherent trust barrier for some.,0,1,5,Contradicts Respondent #3005678,6
 9848334,What makes this product a scam?,There's probably a hacker on the other end of the screen laughing all the way to the bank.,Inherent trust barrier for some.,0,1,5,N/A,10
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,

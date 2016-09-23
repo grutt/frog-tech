@@ -2,6 +2,8 @@ var entries;
 
 $.get( "assets/dummy.csv", function( data ) {
   entries = $.csv.toObjects(data);
+
+  alert( "Load was performed." );
 });
 
 
@@ -31,10 +33,10 @@ $(function(){
   $("#ex3").slider({min  : 0, max  : 10, value: 7, tooltip_position:'bottom'});
 
   //live populating
-  $.each(entries, function(i){
-    $(transcriptEntry("1:0"+1+" pm", "assets/images/gabriel_ruttner.jpg", "question?", "this is some text"))
+  for (i = 0; i < 4; i++) {
+    $(transcriptEntry("1:0"+i+" pm", "assets/images/gabriel_ruttner.jpg", entries[i]., "this is some text"))
       .appendTo($("#liveTimeline"));
-  });
+  }
 
   $(document).keypress(function(e) {
     if(e.which == 13) {
