@@ -51,6 +51,7 @@ $(function(){
     }
 
     if(e.which == 221) {
+        alert(e.which);
         $("#ready").hide();
 
         if(current<max){
