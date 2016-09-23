@@ -28,7 +28,6 @@ function transcriptEntry(time, avatar, quest, text){
 
 var even=0;
 var last;
-var stop = true;
 
 $(function(){
   // activate sliders...
@@ -42,17 +41,16 @@ $(function(){
       .appendTo($("#liveTimePrepop"));
   }
 
-
   $(document).keypress(function(e) {
     if(e.which == 32) {
         $("#ready").hide();
         $("#liveTimePrepop").removeClass("hidden");
         $("#liveTime").addClass("hidden");
         $("html, body").scrollTop($(document).height());
-        stop = false;
+
     }
 
-    if(e.which == 16) {
+    if(e.which == 13) {
         $("#ready").hide();
 
         if(current<max){
