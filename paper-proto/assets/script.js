@@ -87,12 +87,13 @@ $(function(){
     );
 
     $('.fa-commenting-o').click(function(){//over
-        $(this).closet("td").children(".comment-box").toggleClass("hidden");
+        $(this).closest("td").children(".comment-box").toggleClass("hidden");
 
     });
+
     $('.com').click(function(){//over
         var va = $(this).closet("div").children(".inText").val();
-        $(this).closet("div").children(".comments").html("Me: "+va);
+        $(this).closest("div").children(".comments").html("Me: "+va);
     });
 
 
