@@ -96,3 +96,11 @@ border-radius: 15px;
 .question{
 
 }
+
+.container-fluid {
+  background-color: white;
+}
+
+.nav{
+  color:black;
+}
