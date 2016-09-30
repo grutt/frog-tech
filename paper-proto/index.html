@@ -2,6 +2,10 @@
 <!doctype HTML>
 <html>
 <head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
 	<title>LillyPad</title>
 	<link rel="icon" href="assets/images/favi.png" type="image/x-icon"/>
 	<link rel="shortcut icon" href="assets/images/favi.png" type="image/x-icon"/>
@@ -20,13 +24,18 @@
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.js" type="text/javascript"></script>
+<<<<<<< HEAD
   <script src="assets/jquery-csv.js"></script>
 
 	<script src="assets/script.js" type="text/javascript"></script>
+=======
+  <script src="assets/jquery.csv.js"></script>
+  <script src="assets/script.js" type="text/javascript"></script>
+>>>>>>> 956e16e616560d03b29900eceba7453544cd2de9
 
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="background:#0A7784">
      <div class="container-fluid">
        <div class="navbar-header">
          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -35,12 +44,10 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="#">LillyPad</a>
+         <a class="navbar-brand" href="#"><img src="assets/images/pondblacklogo.png" alt="pond" style="width:81px;height:30px;"></a>
        </div>
        <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-right">
-           <li><a href="#">Dashboard</a></li>
-           <li><a href="#">Settings</a></li>
            <li><a href="#">Profile</a></li>
            <li><a href="#">Help</a></li>
          </ul>
@@ -54,58 +61,81 @@
 
    <div class="container-fluid">
      <div class="row">
-       <div class="col-sm-3 col-md-2 sidebar">
+       <div class=" col-sm-3 col-md-2 sidebar">
          <ul class="nav nav-sidebar">
-           <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+           <li><a href="#">Overview</a></li>
            <li><a href="#">Reports</a></li>
            <li><a href="#">Analytics</a></li>
            <li><a href="#">Export</a></li>
          </ul>
          <ul class="nav nav-sidebar">
-           <li><a href="">Nav item</a></li>
-           <li><a href="">Nav item again</a></li>
-           <li><a href="">One more nav</a></li>
-           <li><a href="">Another nav item</a></li>
-           <li><a href="">More navigation</a></li>
+			 <li class="active">
+				 <a href="">Transcription</a></li>
+		 </ul>
+         <ul class="nav nav-sidebar">
+           <li><a href="">Most Insightful</a></li>
+           <li><a href="">Photos</a></li>
+           <li><a href="">Comments</a></li>
+		   <li><a href="">Collaborators</a></li>
          </ul>
          <ul class="nav nav-sidebar">
-           <li><a href="">Nav item again</a></li>
-           <li><a href="">One more nav</a></li>
-           <li><a href="">Another nav item</a></li>
+           <li><a href="">I'm Feeling Lucky</a></li>
          </ul>
        </div>
 
+	   <div class=" hidden priority col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		   <h1>Great Ideas View</h1>
+		   <h3>Grouped by Concept</h3>
+
+		<img src="assets/images/pong.png" style="width:100%"/>
+	</div>
+
        <!--TIMELINE SYNTHESIS VIEW-->
-       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+       <div class=" tLsyn col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
          <h1 class="page-header">Timeline Synthesis</h1>
          <div class="page-header">
-            <h4 class="page-header">About <b>Gabe Ruttner</b></h4>
-            <table class="table table-striped" style="display:none">
-              <tr>
-                <td>Tech-savvy</td>
-                <td><input id="ex1"/></td>
-                <td>Tech-affraid</td>
-              </tr>
-              <tr>
-                <td>Tech-savvy</td>
-                <td><input id="ex2"/></td>
-                <td>Tech-affraid</td>
-              </tr>
-              <tr>
-                <td>Tech-savvy</td>
-                <td><input id="ex3"/></td>
-                <td>Tech-affraid</td>
-              </tr>
-            </table>
+            <h4 class="page-header">About <b>Roy</b></h4>
+
+			<div class="hidden architypes">
+
+
+	            <table class="table table-striped" style="width:50%">
+	              <tr>
+	                <td>Tech-savvy</td>
+	                <td><input id="ex1"/></td>
+	                <td>Tech-affraid</td>
+	              </tr>
+	              <tr>
+	                <td>Tech-savvy</td>
+	                <td><input id="ex2"/></td>
+	                <td>Tech-affraid</td>
+	              </tr>
+	              <tr>
+	                <td>Tech-savvy</td>
+	                <td><input id="ex3"/></td>
+	                <td>Tech-affraid</td>
+	              </tr>
+	            </table>
+			</div>
+
           </div>
           <h3 class="page-header">Transcript</h3>
+		  <input type="button" class="onlyInsights" value="Toggle Filter" />
+
 
           <div class="timeline">
+			  <h1 id="ready">Ready to Transcribe...</h1>
+
             <table class="table" id="liveTimeline">
             </table>
+
+			<table class="table hidden" id="liveTimePrepop">
+			</table>
           </div>
 
 
+		  <input type="button" class="onlyInsights" value="Toggle Filter" />
+		  <input type="button" class="priorityView" value="Next - Priority Synthesis" />
 
 
        </div>

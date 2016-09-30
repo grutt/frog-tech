@@ -6,8 +6,16 @@ body{
 	background: #BABABA;
 }
 
+.hidden{
+    display:none;
+}
+
 .avatar{
-  width:60px;
+  width:70px;
+}
+
+.orang{
+    color:#ffac00;
 }
 
 .dotty{
@@ -80,11 +88,19 @@ border-radius: 15px;
 }
 
 .insight{
-  border-color: yellow;
+  border-color: #ffac00;
 }
 .insight:before{
-  border-color: transparent yellow;
+  border-color: transparent #ffac00;
 }
 .question{
-  display:none;
+
+}
+
+.container-fluid {
+  background-color: white;
+}
+
+.nav{
+  color:black;
 }
