@@ -7,4 +7,4 @@ Some simple examples to transcribe an audio source to text.
 
 
 # install dependencies
-pip3 install -r requirements.txt
+pip install -r requirements.txt
