@@ -1,6 +1,9 @@
 # Transcription Playground
 Some simple examples to transcribe an audio source to text.
-See ['here'](https://pypi.python.org/pypi/SpeechRecognition/) for information on the python SpeachRecognition Library
+
+['Google Cloud Api-Client'](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/speech/api-client)
+
+['SpeachRecognition Library'](https://pypi.python.org/pypi/SpeechRecognition/) for information on the python 
 
 
 # install dependencies
