@@ -4,6 +4,7 @@ $.get( "assets/dummy.csv", function( data ) {
   entries = $.csv.toObjects(data);
 });
 
+
 var current = 0;
 var max = 10;
 
