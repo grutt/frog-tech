@@ -28,23 +28,14 @@ function transcriptEntry(time, avatar, quest, text){
                 </tr>';
 }
 
-<<<<<<< HEAD
-
-entries = $.csv.toObjects("assets/dummy.csv");
-=======
 var even=0;
 var last;
->>>>>>> 956e16e616560d03b29900eceba7453544cd2de9
 
 $(function(){
-
-
   // activate sliders...
   $("#ex1").slider({min  : 0, max  : 10, value: 10, tooltip_position:'bottom'});
   $("#ex2").slider({min  : 0, max  : 10, value: 3, tooltip_position:'bottom'});
   $("#ex3").slider({min  : 0, max  : 10, value: 7, tooltip_position:'bottom'});
-
-
 
   //live populating
   for (i = 0; i < 9; i++) {
@@ -88,13 +79,7 @@ $(function(){
   });
 
 
-<<<<<<< HEAD
-
-
-  $('#liveTimeline tr .speach').hover(
-=======
   $('.speach').hover(
->>>>>>> 956e16e616560d03b29900eceba7453544cd2de9
     function(){//over
       $(this).children(".buttons").addClass("over");
     },
