@@ -4,7 +4,6 @@ $.get( "assets/dummy.csv", function( data ) {
   entries = $.csv.toObjects(data);
 });
 
-
 var current = 0;
 var max = 10;
 
@@ -29,14 +28,20 @@ function transcriptEntry(time, avatar, quest, text){
                 </tr>';
 }
 
+entries = $.csv.toObjects("assets/dummy.csv");
+
 var even=0;
 var last;
 
 $(function(){
+
+
   // activate sliders...
   $("#ex1").slider({min  : 0, max  : 10, value: 10, tooltip_position:'bottom'});
   $("#ex2").slider({min  : 0, max  : 10, value: 3, tooltip_position:'bottom'});
   $("#ex3").slider({min  : 0, max  : 10, value: 7, tooltip_position:'bottom'});
+
+
 
   //live populating
   for (i = 0; i < 9; i++) {
@@ -80,7 +85,9 @@ $(function(){
   });
 
 
-  $('.speach').hover(
+
+
+  $('#liveTimeline tr .speach').hover(
     function(){//over
       $(this).children(".buttons").addClass("over");
     },
